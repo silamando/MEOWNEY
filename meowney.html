@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meowney - Purrfessional Wealth</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Neue', cursive ;
+      background: linear-gradient(to bottom, #d9fdd3, #ffffff);
+      color: #333;
+    }
+
+    nav {
+      background-color: #c4e8b4;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav .left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      font-family: 'Comic Neue', cursive;
+      font-size: larger;
+    }
+
+    nav .right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-left: auto;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      padding: 0 5px;
+      font-weight: bold;
+      flex-grow: 1;
+      text-align: center;
+      font-size: 1.5rem;
+      line-height: 60px;
+      border-radius: 1px solid #c4e8b4;
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+    }
+
+    nav a:not(:last-child) {
+      border-right: none;
+    }
+
+    nav button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      border: none;
+      background: white;
+      color: #2ecc71;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    nav img {
+      height: 40px;
+      margin-left: 10px;
+    }
+
+    section {
+      padding: 60px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    section:nth-child(even) {
+      flex-direction: row-reverse;
+      background-color: #eaffea;
+    }
+
+    section div {
+      flex: 1 1 45%;
+      padding: 20px;
+    }
+
+    section img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 15px;
+    }
+
+    h2 {
+      color: #27ae60;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .cta {
+      background-color: #d9fdd3;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .cta button {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .cta button:hover {
+      background-color: #1e8449;
+    }
+
+    footer {
+      background-color: #c4e8b4;
+      color: rgb(44, 41, 41);
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+    }
+
+    .phase-box{
+        background-color: #c4e8b4;
+        border-radius: 20px ;
+        padding: 25px;
+        max-width: 600px;
+        margin-bottom: 30px;
+        box-shadow: 0px 5px 10px rgba(7, 7, 7, 0.1);
+    }
+
+    .phase-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    img.blend-image {
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      background-color: transparent;
+    }
+
+    .phase-list{
+      list-style-type: disc;
+      padding-left: 20px;
+      font-size: 22px;
+    }
+    .phase-list li{
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+
+    img.blend-image1 {
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 700px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      background-color: transparent;
+    }
+
+    .ca {
+      font-family: 'Comic Neue' cursive;
+      font-size: 50px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+
+
+
+    
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="left">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#how">How to Buy</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Road Map</a>
+      <a href="#buy" class="buy-link"><button>Buy</button></a>
+    </div>
+    <div class="right">
+      <span>Meowney</span>
+      <img src="meowney the cat.png" alt="Cool Cat"> 
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="phase-box">
+        <div>
+            <div class="phase-box"><h2>Welcome to Meowney</h2></div>
+            <div class="phase-list"><p>The funniest meme coin with serious purr-tential. It's time to make your wallet meow! Say hello to Meowney($MEOW)- The internet's freshest listing feline-inspired meme coin with claws of gold and a heart of degen. Born in the litter box of Web3 and raisedon pure chaos, Meowney isnt just a token - it's a Movement.  Hop in,HODL, and let's take this litter straight to the moon....When the market gets ruff, we go MEOW.</p></div>
+        </div>
+    </div>
+        <div><img src="meowney the cat.png" alt="Cat Icon" class="blend-image"></div>
+        <div class="ca"><p>CA:Coming soon with full <strong>PURR-SUIT</strong> of profits</p></div>
+  </section>
+    
+  <section id="about">
+    <div class="phase-box">
+        <div class="phase-title"><h2>About Meowney</h2></div>
+            <div class="phase-list"><p>Meowney is a community-driven meme coin thats all about fun,freedom, and feline energy. a wild community of degens,cat lovers, and meme warriors ready to claw their way to the top. <li>TOKEN SYMBOL; $MEOW</li> <li>CHAIN: Solana</li> <li>OWNERSHIP: 100% community focused, -no devs wallets, no hidden claws</li> <li>Purpose: Vibes, memes and a market CHAOS!!</li> <li>Utility: None ....unless laughter ulitily!!</li> </p></div>
+        </div>
+    </div>
+    <div><img src="meowney.png" alt="About" class="blend-image1"></div>
+  </section>
+
+  <section id="how">
+    <div class="phase-box">
+        <div>
+            <div class="phase-title"><h2>How to Buy</h2></div>
+            <div class="phase-list"><p>1. Connect your wallet. <p>Get a solana Wallet- you'll need a wallet that supports Solana. We recoommend <li>Phantom-easy to use and works in your browser or phone</li><li>Solfare -another greater solana wallet option</li>Create your wallet and save your word seed phrase like its a sacred scroll to catnip</p><br>2. Buy some SOL. <p>Youll need Solana(SOL)to buy $MEOW and pay for tiny transaction fees. Buy SOL on any major exchanges ..Then send it to your wallet address.</p><br>3. Go to a DEX <p>Now it's time to hunt some meowney. Use a Solana-based decentralised exchange like: <li>Dexscreener-Easiest way to find the best swap rate</li><li>Raydium</li> Paste the offcial $MEOW token address(always confirm from official sources)and swap your SOL for $MEOW</p><br>4. HODL and enjoy the ride! <P>Youre in. Post your gains. Spam cat memes. Annoy friends  WELCOME TO THE LITTER BOX.</p></div>
+        </div>
+    </div>
+    <div><img src="MEOWNEY BUY.png" alt="Buy" class="blend-image1"></div>
+  </section>
+
+  <section id="tokenomics">
+    <div class="phase-box">
+      <div>
+        <div class="phase-title"><h2>Tokenomics</h2></div>
+        <p>Total Supply: 1,000,000,000 $MEOWNEY  $MEOW kkeps it simple,like a cat knocking stuff off the counter for no reason. No complex charts. No fake promises. Just numbers that purrr<br>Liquidity: 60%<br>Development: 20%<br>Marketing: 10%<br>Airdrops & Rewards: 10% <h2>Anti-Rug features</h2><strong><p><li>Liquidity locked</li><li>Renounced Mint Authority</li><li>No Taxes, No BS</li></p></strong>
+      </div>
+    </div>
+    <div><img src="meowney tokenomics.jpeg" alt="Tokenomics" class="blend-image1"></div>
+  </section>
+
+  <section id="roadmap">
+    <div class="phase-box">
+      <div>
+        <div class="phase-title"><h2>Road Map</h2></div>
+        <p><strong>This Token is simply paying homage to an animal we all love.</strong></p><p><strong>$Meowney is a a meme coin with no intrinsic value or expectation of financial return.  There is no formal team or roadmap . The coin is completely useless and for entertainment purpose only.</strong></p>
+      </div>
+    </div>
+    <div><img src="Meowney audi.png" alt="Roadmap" class="blend-image1"></div>
+  </section>
+
+  <div class="cta" id="buy">
+    <div class="phase-title"><h2>Buy $MEOWNEY Now</h2></div>
+    <p>Don't miss out on the fluffiest moon mission. Get your paws on $MEOWNEY today!</p>
+    <button onclick="window.alert('Coming Soon! Exchanges & Listings 🚀')">Get $MEOWNEY</button>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Meowney. All rights reserved. | Built for the people. Inspired by cats.</p>
+  </footer>
+</body>
+</html>
+
